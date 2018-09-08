@@ -16,9 +16,12 @@ namespace ACMBL
             OrderId = orderId;
         }
 
+        public int CustomerId { get; set; }
+        public int ShippingAddressId { get; set; }
         // correctly compare times based on timezones
         public DateTimeOffset? OrderDate { get; set; }
         public int OrderId { get; private set; }
+        public List<OrderItem> OrderItems { get; set; }
 
         /// <summary>
         /// Validates the order data.

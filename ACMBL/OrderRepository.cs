@@ -27,6 +27,17 @@ namespace ACMBL
             return new Order();
         }
 
+        public OrderDisplay RetrieveOrderDisplay()
+        {
+            var orderDisplay = new OrderDisplay();
+
+            // Code that retrieves the defined order fields
+
+            // Temporary hard coded data
+
+            return orderDisplay;
+        }
+
         /// <summary>
         /// Save the current order.
         /// </summary>
