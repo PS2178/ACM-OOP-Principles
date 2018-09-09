@@ -27,13 +27,44 @@ namespace ACMBL
             return new Order();
         }
 
-        public OrderDisplay RetrieveOrderDisplay()
+        public OrderDisplay RetrieveOrderDisplay(int orderId)
         {
             var orderDisplay = new OrderDisplay();
 
             // Code that retrieves the defined order fields
 
             // Temporary hard coded data
+            if (orderId == 10)
+            {
+                orderDisplay.FirstName = "Bilbo";
+                orderDisplay.LastName = "Baggins";
+                orderDisplay.OrderDate = new DateTimeOffset(2014, 4, 14, 10, 00, 00, new TimeSpan(7, 0, 0));
+                orderDisplay.ShippingAddress = new Address()
+                {
+                    AddressType = 1,
+                    StreetLine1 = "Bag End",
+                    StreetLine2 = "Bagshot row",
+                    City = "Hobbiton",
+                    State = "Shire",
+                    Country = "Middle Earth",
+                    PostalCode = "144"
+                };
+            }
+
+            orderDisplay.OrderDisplayItemList = new List<OrderDisplayItem>();
+
+            // Code that retrieves the order items
+
+            // Temporary hard coded data
+            if (orderId == 10)
+            {
+                var orderDisplayItem = new OrderDisplayItem()
+                {
+                    ProductName = "Sunflowers",
+                    OrderQuntity = 2,
+                    PurchasePrice = 15.96M
+                };
+            }
 
             return orderDisplay;
         }
