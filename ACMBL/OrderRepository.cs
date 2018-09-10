@@ -64,6 +64,15 @@ namespace ACMBL
                     OrderQuntity = 2,
                     PurchasePrice = 15.96M
                 };
+                orderDisplay.OrderDisplayItemList.Add(orderDisplayItem);
+
+                orderDisplayItem = new OrderDisplayItem()
+                {
+                    ProductName = "Rake",
+                    OrderQuntity = 1,
+                    PurchasePrice = 6M
+                };
+                orderDisplay.OrderDisplayItemList.Add(orderDisplayItem);
             }
 
             return orderDisplay;
