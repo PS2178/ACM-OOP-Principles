@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACMBL", "ACMBL\ACMBL.csproj", "{C35D11EA-005F-4F3F-A282-93802F83C65A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACMBL", "ACMBL\ACMBL.csproj", "{C35D11EA-005F-4F3F-A282-93802F83C65A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{66FE8A7D-089F-4EAD-94C9-DF4B41B4CF8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACMBL.Test", "ACMBL.Test\ACMBL.Test.csproj", "{960508F1-A1CC-4523-B0AE-2503141F771A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACMBL.Test", "ACMBL.Test\ACMBL.Test.csproj", "{960508F1-A1CC-4523-B0AE-2503141F771A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Common", "Acme.Common\Acme.Common.csproj", "{83E590D3-033B-4F01-891E-D948EDC54FF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.CommonTest", "Acme.CommonTest\Acme.CommonTest.csproj", "{9FBA4D0A-6B15-49E7-AD33-258DF5933E73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +27,21 @@ Global
 		{960508F1-A1CC-4523-B0AE-2503141F771A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{960508F1-A1CC-4523-B0AE-2503141F771A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{960508F1-A1CC-4523-B0AE-2503141F771A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83E590D3-033B-4F01-891E-D948EDC54FF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83E590D3-033B-4F01-891E-D948EDC54FF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83E590D3-033B-4F01-891E-D948EDC54FF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83E590D3-033B-4F01-891E-D948EDC54FF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FBA4D0A-6B15-49E7-AD33-258DF5933E73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FBA4D0A-6B15-49E7-AD33-258DF5933E73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FBA4D0A-6B15-49E7-AD33-258DF5933E73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FBA4D0A-6B15-49E7-AD33-258DF5933E73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{960508F1-A1CC-4523-B0AE-2503141F771A} = {66FE8A7D-089F-4EAD-94C9-DF4B41B4CF8E}
+		{9FBA4D0A-6B15-49E7-AD33-258DF5933E73} = {66FE8A7D-089F-4EAD-94C9-DF4B41B4CF8E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0571D36E-CC9C-4DD3-A7E2-FE61D84C9189}

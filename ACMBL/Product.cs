@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Acme.Common;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ACMBL
 {
-    public class Product : EntityBase
+    public class Product : EntityBase, ILoggable
     {
         public Product()
         {
@@ -19,7 +20,16 @@ namespace ACMBL
         public decimal? CurrentPrice { get; set; }
         public int ProductId { get; private set; }
         public string ProductDescription { get; set; }
-        public string ProductName { get; set; }
+        private string _ProductName;
+
+        public string ProductName
+        {
+            get {
+                return _ProductName.InsertSpaces();
+            }
+            set { _ProductName = value; }
+        }
+
 
         /// <summary>
         /// Validates the product data.
@@ -38,6 +48,12 @@ namespace ACMBL
         public override string ToString()
         {
             return ProductName;
+        }
+
+        public string Log()
+        {
+            var logString = $"{ProductId}: {ProductName} Detail: {ProductDescription} Status: {EntityState.ToString()}";
+            return logString;
         }
     }
 }
