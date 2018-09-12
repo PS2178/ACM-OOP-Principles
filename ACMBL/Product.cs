@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ACMBL
 {
-    public class Product
+    public class Product : EntityBase
     {
         public Product()
         {
@@ -25,7 +25,7 @@ namespace ACMBL
         /// Validates the product data.
         /// </summary>
         /// <returns></returns>
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 
